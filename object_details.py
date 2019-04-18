@@ -82,8 +82,8 @@ def get_different_scales(image, image_label, label_value,
         num_scales = number_of_scales[obj_num]
         scale_difference = 1.2 / number_of_scales[obj_num]
     else:
-        num_scales = number_of_scales
-        scale_difference = 1.2 / number_of_scales
+        num_scales = int(number_of_scales)
+        scale_difference = 1.2 / int(number_of_scales)
 
     zoom_range = SCALES_RANGE_DICT[obj_name]
     if zoom_range is None:
